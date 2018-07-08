@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>AngularJs with Routing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    
+</head>
+
+<body>
+    <header>
+        <ul class="list-inline">
+            <li>
+                <a ui-sref="/" class="btn btn-default">Home</a>
+            </li>
+            <li>
+                <a ui-sref="about" class="btn btn-default">About</a>
+            </li>
+            <li>
+                <a ui-sref="contact" class="btn btn-default">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <hr/>
+    <div ui-view></div>
+</body>
+<script src="script/angular.min.js"></script>
+<script src="script/angular.min.js.map"></script>
+<!-- <script src="script/angular-route.js"></script>
+<script src="script/angular-route.min.js.map"></script> -->
+<script src="script/angular-ui-router.min.js"></script>
+<script src="script/angular-ui-router.min.js.map"></script>
+<script src="app.js"></script>
+<script src="controller/home.js"></script>
+<script src="controller/about.js"></script>
+<script src="controller/contact.js"></script>
+
+</html>
